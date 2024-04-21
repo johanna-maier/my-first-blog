@@ -1,4 +1,9 @@
 def hi(name):
+    '''
+    Takes in a name, prints individual or generic greeting
+        Parameters:
+                name (str): A string
+    '''
     if name == 'Ola':
         print('Hola ' + name + '!')
     elif name == 'Francesca':
@@ -9,6 +14,10 @@ def hi(name):
         print('Hey ' + name + '!')
 
 girls = ['Rachel', 'Johanna', 'Francesca', 'Ola', 'You']
+
+print("test of docstrings")
+print(hi.__doc__)
+print("end of test of docstrings")
 
 for name in girls:
     hi(name)
